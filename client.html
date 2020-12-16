@@ -87,6 +87,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#module-client">Main Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-controller">Controller</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-network">Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-filehandler">FileHandler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-output">Output</a></li>
 </ul>
 </li>
 </ul>
@@ -190,7 +192,7 @@ the server for a route and print it as output.</p>
 <dl class="py method">
 <dt id="controller.Controller.create_config_file">
 <code class="sig-name descname">create_config_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#controller.Controller.create_config_file" title="Permalink to this definition">¶</a></dt>
-<dd><p>This method is called when no configfile is found a restoring to the defaults with <code class="docutils literal notranslate"><span class="pre">client.py</span> <span class="pre">config</span> <span class="pre">-d</span></code> or <code class="docutils literal notranslate"><span class="pre">client.py</span> <span class="pre">config</span> <span class="pre">--defauls</span></code> is requested.</p>
+<dd><p>This method is called when no configfile is found or a restoring to the defaults with <code class="docutils literal notranslate"><span class="pre">client.py</span> <span class="pre">config</span> <span class="pre">-d</span></code> or <code class="docutils literal notranslate"><span class="pre">client.py</span> <span class="pre">config</span> <span class="pre">--defauls</span></code> is requested.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -234,6 +236,48 @@ This function can be called by <code class="docutils literal notranslate"><span 
 <code class="sig-name descname">test</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#network.Network.test" title="Permalink to this definition">¶</a></dt>
 <dd><p>This is a test method, which can be used to test some code.
 It can be called with <code class="docutils literal notranslate"><span class="pre">client.py</span> <span class="pre">debug</span> <span class="pre">-t</span></code> or <code class="docutils literal notranslate"><span class="pre">client.py</span> <span class="pre">debug</span> <span class="pre">--test</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-filehandler">
+<span id="filehandler"></span><h2>FileHandler<a class="headerlink" href="#module-filehandler" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="filehandler.FileHandler">
+<em class="property">class </em><code class="sig-prename descclassname">filehandler.</code><code class="sig-name descname">FileHandler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">confName</span></em><span class="sig-paren">)</span><a class="headerlink" href="#filehandler.FileHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is for handling files.</p>
+<dl class="py method">
+<dt id="filehandler.FileHandler.create_config_file">
+<code class="sig-name descname">create_config_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#filehandler.FileHandler.create_config_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates the configfile with the name of the instance variable <code class="docutils literal notranslate"><span class="pre">self.confName</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="filehandler.FileHandler.csvExport">
+<code class="sig-name descname">csvExport</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#filehandler.FileHandler.csvExport" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exports the given text into a csv file</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-output">
+<span id="output"></span><h2>Output<a class="headerlink" href="#module-output" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="output.Output">
+<em class="property">class </em><code class="sig-prename descclassname">output.</code><code class="sig-name descname">Output</code><a class="headerlink" href="#output.Output" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class handles the output on the console</p>
+<dl class="py method">
+<dt id="output.Output.generic">
+<code class="sig-name descname">generic</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#output.Output.generic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Just prints the given variable</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="output.Output.routeFormat">
+<code class="sig-name descname">routeFormat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#output.Output.routeFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Formats a given route.</p>
 </dd></dl>
 
 </dd></dl>
