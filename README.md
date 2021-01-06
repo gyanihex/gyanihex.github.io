@@ -1,1 +1,0 @@
-# gyanihex.github.io
